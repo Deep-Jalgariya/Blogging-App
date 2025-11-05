@@ -2,7 +2,6 @@
 
 A full-stack blogging platform built with React.js and Node.js, featuring user authentication, rich content creation, and social interactions with a beautiful dark/light theme system.
 
-![Blog App Banner](https://via.placeholder.com/800x400/0063a5/ffffff?text=Modern+Blog+Application)
 
 ## ✨ Features
 
