@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+.Inclusive-editStory-page {
+    width: 1000px;
+    margin: 1.2rem auto;
+}
+
+@media only screen and (max-width: 1001px) {
+    .Inclusive-editStory-page {
+        width: 100%;
+    }
+}
+
+.Inclusive-editStory-page .editStory-form {
+    position: relative;
+    width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editStory-form input#title {
+    width: 100%;
+    height: 55px;
+    outline: 0;
+    border: none;
+    border: var(--color-border) solid 1px;
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    font-weight: 450;
+    font-family: 'Balsamiq Sans', cursive;
+    border-bottom: none;
+}
+
+.ck-editor {
+    margin-bottom: 1rem !important;
+}
+
+@media only screen and (max-width: 651px) {
+    .Inclusive-editStory-page .editStory-form {
+        width: 80vw;
+    }
+    .ck.ck-reset.ck-editor.ck-rounded-corners {
+        width: 100% !important;
+    }
+}
+
+.ck-editor__top * {
+    border: none !important;
+}
+
+.ck-editor__top {
+    border: var(--color-border) solid 1px !important;
+    border-bottom: none !important;
+    padding: 0.6rem 1rem !important;
+    background: var(--color-surface) !important;
+}
+
+.ck-content {
+    border: var(--color-border) solid 1px !important;
+    background: var(--color-surface) !important;
+    color: var(--color-text) !important;
+}
+
+.ck-toolbar__items,
+.ck-toolbar div {
+    border: none !important;
+}
+
+.ck-editor__editable {
+    height: 250px;
+    padding: 0.5rem 1rem !important;
+}
+
+.ck-editor__editable:focus {
+    box-shadow: none !important;
+}
+
+.StoryImageField {
+    border: var(--color-border) solid 1px;
+    background: var(--color-surface);
+    width: 100%;
+    height: 240px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.StoryImageField svg {
+    font-size: 1.4rem;
+    color: var(--color-muted);
+}
+
+.StoryImageField .txt {
+    width: 350px;
+    height: auto;
+    margin-top: 14px;
+    text-align: center;
+    color: var(--color-muted);
+}
+
+.StoryImageField [type="file"] {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.editStory-btn {
+    width: 100%;
+    background-color: var(--color-primary);
+    padding: 0.7rem;
+    color: var(--color-surface);
+    margin-top: 1.9rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color var(--transition-normal);
+}
+
+.editStory-btn:hover {
+    background-color: var(--color-primary-600);
+}
+
+.dis-btn {
+    width: 100%;
+    background-color: var(--color-primary);
+    padding: 0.7rem;
+    color: var(--color-surface);
+    margin-top: 1.9rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.editStory-form .error_msg {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    background-color: rgba(245, 72, 72, 0.9);
+    color: white;
+    padding: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.editStory-form .success_msg {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    background-color: rgba(14, 218, 75, 0.9);
+    color: white;
+    padding: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.editStory-form .success_msg a {
+    color: var(--color-text);
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.currentlyImage {
+    width: 100%;
+    height: 280px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.currentlyImage .absolute {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    opacity: 0.6;
+    font-family: 'Mukta ', sans-serif;
+    z-index: 52;
+}
+
+.currentlyImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}/*
+ Dark theme specific styles */
+body[data-theme='dark'] .ck-editor__top {
+    background: var(--color-surface) !important;
+}
+
+body[data-theme='dark'] .ck-toolbar {
+    background: var(--color-surface) !important;
+    border-color: var(--color-border) !important;
+}
+
+body[data-theme='dark'] .ck-button {
+    color: var(--color-text) !important;
+}
+
+body[data-theme='dark'] .ck-button:hover {
+    background: var(--color-bg) !important;
+}
+
+body[data-theme='dark'] .ck-editor__editable {
+    background: var(--color-surface) !important;
+    color: var(--color-text) !important;
+}
+
+body[data-theme='dark'] .editStory-form input#title:focus {
+    border-color: var(--color-primary);
+    box-shadow: var(--focus-ring);
+}
